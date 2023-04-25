@@ -14,7 +14,7 @@ services:
       - INSTALL_EXTENSIONS=true
       - CORS_ENABLED=true
       - SKIP_DEMO_DATA=true
-      - STABLE_EXTENSIONS=wps,ysld,monitor,css,gdal,control-flow,params-extractor,querylayer,imagemap,sldservice
+      - STABLE_EXTENSIONS=vectortiles,wps,ysld,monitor,css,gdal,control-flow,params-extractor,querylayer,imagemap,sldservice
       - EXTRA_JAVA_OPTS=-Xms1G -Xmx2G
     volumes:
       - ./geoserver_data:/opt/geoserver_data/:Z

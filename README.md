@@ -241,3 +241,7 @@ Examples:
 `./release.sh 2.22.0 publish`
 
 `./release.sh 2.22.1 buildandpublish`
+
+# HOW I USE IT
+
+
