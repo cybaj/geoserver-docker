@@ -1,3 +1,22 @@
+# 사용
+
+## build
+
+```
+docker build -t cybaj/geoserver:2.22.2 -t cybaj/geoserver:latest .
+```
+
+## run
+
+```
+docker run -d -p 8200:8080 \
+--env CORS_ENABLED=true \
+--env SKIP_DEMO_DATA=true \
+--env INSTALL_EXTENSIONS=true \
+--env STABLE_EXTENSIONS="vectortiles,wps,ysld,monitor,css,gdal,control-flow,params-extractor,querylayer,imagemap,sldservice" \
+cybaj/geoserver:latest
+```
+
 # A geoserver docker image
 
 This Dockerfile can be used to create images for all geoserver versions since 2.5.

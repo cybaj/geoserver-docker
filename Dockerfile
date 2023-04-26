@@ -45,7 +45,8 @@ ENV CATALINA_OPTS="\$EXTRA_JAVA_OPTS \
     -Dorg.geotools.coverage.jaiext.enabled=true"
 
 # init
-RUN apt update && \
+RUN apt clean && \
+    apt update && \
     apt -y upgrade && \
     apt install -y --no-install-recommends openssl unzip gdal-bin wget curl openjdk-11-jdk && \
     apt clean && \
